@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Quiz</title>
+		<meta charset="utf-8">
+
+		<script src="script.js" defer></script>
+		<script src="quiz.js" defer></script>
+			
+		<link rel="stylesheet" href="styles/light_mode.css">
+
+		<link rel="icon" href="media/logo.png">			
+	</head>
+
+	<body>
+		<div id="loading">
+			<img src="media/load.gif" alt="loading gif for when page refreshes">
+		</div>
+
+		<header id="back-to-top">
+			<a href="index.html">
+				<img
+				  src="media/logo.png"
+				  alt="logo"
+				  id="logo">
+			</a>
+
+			<h1>B & W</h1>
+		  
+			<button type="button">🌞</button>
+		</header>
+
+		<nav>
+			<ul class="navlink">
+				<li>
+					<a href="these-violent-delights.html">These Violent Delights</a>
+				</li>
+				<li>
+					<a href="the-atlas-six.html">The Atlas Six</a>
+				</li>
+				<li>
+					<a href="six-of-crows.html">Six of Crows</a>
+				</li>
+				<li>
+					<a href="quiz.html">Quiz</a>
+				</li>
+				<li>
+					<a href="login.html">Log in</a>
+				</li>
+			</ul>
+		</nav>
+		
+		<main>
+			<section id="first-section" class="hidden-fly">
+				<h2>Quiz</h2>
+				
+				<h3>Which Fantasy Subgenre Will Suit You Best?</h3>
+				
+				<a href="#quiz-form">START</a>
+			</section>
+
+			<form id="quiz-form">
+				<fieldset class="hidden-zoom">
+					<legend>Question 1</legend>
+					
+					<p>Are you more into:</p>
+
+					<table>
+						<tr>
+							<td>
+								<input type="radio" id="A1" name="q1" value="1">
+								<label for="A1">Realistic stories</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="radio" id="B1" name="q1" value="2">
+								<label for="B1">Thrillers</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="radio" id="C1" name="q1" value="3">
+								<label for="C1">Anything (doesn't matter)</label>
+							</td>
+						</tr>
+					</table>
+				</fieldset>
+
+				<fieldset class="hidden-zoom">
+					<legend>Question 2</legend>
+					
+					<p>You prefer a story in a:</p>
+
+					<table>
+						<tr>
+							<td>
+								<input type="radio" id="A2" name="q2" value="1">
+								<label for="A2">Familiar city</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="radio" id="B2" name="q2" value="2">
+								<label for="B2">Dark city</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="radio" id="C2" name="q2" value="3">
+								<label for="C2">Imaginary city</label>
+							</td>
+						</tr>
+					</table>
+				</fieldset>
+
+				<fieldset class="hidden-zoom">
+					<legend>Question 3</legend>
+					
+					<p>Your favorite character is:</p>
+
+					<table>
+						<tr>
+							<td>
+								<input type="radio" id="A3" name="q3" value="1">
+								<label for="A3">Juliet from Romeo and Juliet</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="radio" id="B3" name="q3" value="2">
+								<label for="B3">Coraline from Coraline</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="radio" id="C3" name="q3" value="3">
+								<label for="C3">Percy Jackson from the Percy Jackson series</label>
+							</td>
+						</tr>
+					</table>
+				</fieldset>
+
+				<fieldset class="hidden-zoom">
+					<legend>Question 4</legend>
+					
+					<p>Your favorite book is:</p>
+
+					<table>
+						<tr>
+							<td>
+								<input type="radio" id="A4" name="q4" value="1">
+								<label for="A4">Harry Potter by J. K. Rowling</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="radio" id="B4" name="q4" value="2">
+								<label for="B4">And Then They Were None by Agatha Christie</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="radio" id="C4" name="q4" value="3">
+								<label for="C4">Lord Of The Rings J. R. R. Tolkien</label>
+							</td>
+						</tr>
+					</table>
+				</fieldset>
+
+				<fieldset class="hidden-zoom">
+					<legend>Question 5</legend>
+					
+					<p>You dislike:</p>
+
+					<table>
+						<tr>
+							<td>
+								<input type="radio" id="A5" name="q5" value="1">
+								<label for="A5">Stories that are irrelevant to the real world</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="radio" id="B5" name="q5" value="2">
+								<label for="B5">Light stories (they're too baby-ish for you)</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="radio" id="C5" name="q5" value="3">
+								<label for="C5">Stories without a well-buil imaginary world</label>
+							</td>
+						</tr>
+					</table>
+				</fieldset>
+
+				<button type="button" class="interactive-button" id="quiz-button">Finish</button>
+
+				<div id="quiz-result">Result: __ points</div>
+			</form>
+
+			<br>
+
+			<table id="result-table">
+				<thead>
+					<tr>
+						<th colspan="3">
+						Here Is Your Result Depending On How Many Points You Have:
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Less than 6 points</td>
+						<td>Between 6 to 10 points</td>
+						<td>Between 11 to 15 points</td>
+					</tr>
+					<tr>
+						<td>Urban Fantasy</td>
+						<td>Dark Fantasy</td>
+						<td>High Fantasy</td>
+					</tr>
+				</tbody>
+			</table>
+		</main>
+
+		<footer>
+			<ul>
+				<li><a href="index.html">Homepage</a></li>
+				<li><a href="login.html">Login</a></li>
+			</ul>
+
+			<ul>
+				<li><a href="#back-to-top">Back To Top</a></li>
+				<li>
+					<a href="https://unsplash.com/photos/sbbKyhxgU_A">Light Mode Background - Photo Taken by J Ph</a> on <a href="https://unsplash.com/license">Unsplash.</a>
+				</li>
+				<li>
+					<a href="https://unsplash.com/photos/neH2O7TaRFU">Dark Mode Background - Photo Taken by Henry Be</a> on <a href="https://unsplash.com/license">Unsplash.</a>
+				</li>
+			</ul>
+		</footer>
+	</body>
+</html>

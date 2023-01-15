@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Login</title>
+		<meta charset="utf-8">
+
+		<script src="script.js" defer></script>
+		<script src="login.js" defer></script>
+			
+		<link rel="stylesheet" href="styles/light_mode.css">
+
+		<link rel="icon" href="media/logo.png">            
+	</head>
+
+	<body>
+		<div id="loading">
+			<img src="media/load.gif" alt="loading gif for when page refreshes">
+		</div>
+
+		<header id="back-to-top">
+			<a href="index.html">
+				<img
+				  src="media/logo.png"
+				  alt="logo"
+				  id="logo">
+			</a>
+
+			<h1>B & W</h1>
+		  
+			<button type="button">🌞</button>
+		</header>
+
+		<nav>
+			<ul class="navlink">
+				<li>
+					<a href="these-violent-delights.html">These Violent Delights</a>
+				</li>
+				<li>
+					<a href="the-atlas-six.html">The Atlas Six</a>
+				</li>
+				<li>
+					<a href="six-of-crows.html">Six of Crows</a>
+				</li>
+				<li>
+					<a href="quiz.html">Quiz</a>
+				</li>
+				<li>
+					<a href="login.html">Log in</a>
+				</li>
+			</ul>
+		</nav>
+
+		<main id="login-main">
+			<h2>Account</h2>
+
+			<form id="login" class="hidden-fly">        
+				<fieldset>
+					<legend>Login</legend>
+							
+					<input id="username" name="username" type="text" placeholder="username" required>
+
+					<button class="interactive-button" id="login-button" type="button">Login</button>
+
+					<p></p>
+
+					<a href="#create-account">Don't have an account?</a>          
+				</fieldset>
+
+				<fieldset>
+					<legend>You have succesfully logged in!</legend>
+					
+					<a href="https://9gag.com/gag/aYr0vjN" target="_blank">
+						<img src="media/happy-cat.jpg" alt="cat with thumbs up meme">            
+					</a>
+				</fieldset>
+
+				<fieldset>
+					<legend>We couldn't find any account with the username you entered</legend>
+					
+					<a href="https://knowyourmeme.com/photos/1384542-crying-cat" target="_blank">
+						<img src="media/sad-cat.webp" alt="sad cat meme">            
+					</a>
+					
+					<br>
+					
+					<a href="https://www.youtube.com/watch?v=oHg5SJYRHA0" target="_blank">Try again</a>
+				</fieldset>
+			</form>
+
+			<form id="create-account" class="hidden-fly">
+				<fieldset>
+					<legend>Create an account</legend>
+
+					<label for="create-account-name">What is your name?</label>
+					<input id="create-account-name" name="name" type="text" placeholder="your first name" required>
+
+					<label for="create-account-age">How old are you?</label>
+					<input id="create-account-age" name="age" type="number" placeholder="your age" required>
+
+					<label for="create-account-year">In what year were you born?</label>
+					<input id="create-account-year" name="year" type="number" required>
+
+					<button class="interactive-button" id="create-account-button" type="button">Submit</button>
+
+					<div id="generated-username">An username will be generated for you :)</div>
+
+					<a href="#back-to-top">Already have an account?</a>
+				</fieldset>
+			</form>
+
+			<h3>Need help creating an account?</h3>
+			
+			<p>This video will explain in details how to create an account:<br>
+			Licensed under C (copyrighted) by Bianca Rossetti
+			</p>
+			<video controls>
+				<source src="media/DIY.mp4" type="video/mp4">
+				<p>
+				  Find the video <a href="media/DIY.mp4">here!</a>
+				</p>
+			</video>
+		</main>
+
+		<footer>
+			<ul>
+				<li><a href="index.html">Homepage</a></li>
+				<li><a href="login.html">Login</a></li>
+			</ul>
+
+			<ul>
+				<li><a href="#back-to-top">Back To Top</a></li>
+				<li>
+					<a href="https://unsplash.com/photos/sbbKyhxgU_A">Light Mode Background - Photo Taken by J Ph</a> on <a href="https://unsplash.com/license">Unsplash.</a>
+				</li>
+				<li>
+					<a href="https://unsplash.com/photos/neH2O7TaRFU">Dark Mode Background - Photo Taken by Henry Be</a> on <a href="https://unsplash.com/license">Unsplash.</a>
+				</li>
+			</ul>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,440 @@
+        /* CSS for general page structure and general styling */
+
+/* CSS for basic elements */
+html {
+  min-height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: white;
+  background-image: url("../media/dark-mode.jpg");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  min-height: 100vh;
+  text-align: center;
+  background-size: 100%;
+  font-family: "Goudy Old Style", serif;
+  font-size: 14pt;
+  line-height: 2;
+}
+
+main {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  border: 0px;
+  height: 100%;
+  width: 65%;
+  min-width: 0;
+  margin: 0px;
+  padding: 20px;
+  justify-self: center;
+  flex: 1;
+}
+
+header, footer {
+  background-color: #0B1400;
+}
+
+/* CSS for every anchor by default */
+a {
+  text-decoration: none;
+  color: white;
+  transition: color 300ms ease;
+}
+
+a:hover, a:active {
+  color: #DDBC97;
+}
+
+/* CSS for every header */
+header {
+  width: 100%;
+  height: 100px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex: auto;
+}
+
+header img {
+  padding: 0;
+  margin: 0;
+  height: 70px;
+}
+
+header a {
+  margin: 0;
+  padding: 0;
+}
+
+header h1,
+header a {
+  display: inline;
+}
+
+header h1 {
+  text-align: right;
+  margin: 0 10px;
+}
+
+/* CSS for switch mode button */
+header button {
+  background-color: #21330a;
+  border: 1px solid #21330a;
+  border-radius: 5px;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  padding: 8px;
+  font-size: 110%;
+}
+
+/* CSS for every navbar */
+nav {
+  background-color: rgba(0, 0, 0, 1); /* rgba(242, 222, 186, 0.75); */
+  position: sticky;
+  top: 0;
+  width: 100%;
+  font-size: 14pt;
+  height: 40px;
+  z-index: 100; /* nav must overlap the paragraphs! */
+  flex: auto;
+}
+
+nav ul {
+  display: flex;
+  margin: 0;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+nav ul li {
+	padding-right: 5px;
+	margin: 0 10px;
+	list-style-type: "\1F4AB";
+}
+
+nav ul li::marker {
+	font-size: 0.8em;
+}
+
+/* CSS for underlining nav anchors */
+nav a::after {
+  content: "";
+  width: 0%;
+  margin: auto;
+  height: 2px;
+  background: black;
+  display: block;
+  transition: all 0.5s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+.links {
+  display: inline;
+  width: 0;
+}
+
+/* css for books quiz input underline */
+
+#book-quiz tr td label::after {
+  content: "";
+  width: 0%;
+  margin: auto;
+  height: 2px;
+  background: white;
+  display: block;
+  transition: all 0.5s ease;
+}
+
+#book-quiz tr td label:hover::after {
+  width: 100%;
+}
+
+/* CSS for every footer */
+footer {
+  border-top: 1px solid black;
+  flex: auto;
+  width: 100%;
+  font-size: 12pt;
+  bottom: 0px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+}
+
+footer ul {
+  text-align: left;
+  margin: 10px;
+  padding: 0px;
+}
+
+footer ul:nth-child(2) {
+  text-align: right;
+}
+
+footer ul li {
+  list-style-type: none;
+}
+
+footer section:nth-child(2) {
+  display: inline;
+  text-align: right;
+}
+
+/* css for interactive button (quiz button, submit email button, etc.) */
+.interactive-button {
+  border-radius: 10px;
+  background-color: #55392A;
+  border: 1px solid #55392A;
+  box-shadow: 0px 4px #cd9777;
+  color: white;
+  padding: 8px 15px;
+  width: auto;
+  margin: auto;
+  font-family: "Goudy Old Style", serif;
+  font-size: 95%;
+}
+
+.interactive-button:hover {
+  background-color: #6A4734;
+  border: 1px solid #6A4734;
+  cursor: pointer;
+  color: white;
+}
+
+.interactive-button:active {
+  background-color: #784F3B;
+  border: 1px solid #784F3B;
+  box-shadow: 0px 2px #d69f7e;
+  transform: translateY(2px);
+  cursor: pointer;
+  color: white;
+}
+
+/* book submit button */
+#book-button {
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  padding: 3px 10px;
+  font-family: "Goudy Old Style", serif;
+  font-size: 105%;
+  margin: 10px 0px;
+  cursor: pointer;
+  transition: color 500ms, background-color 500ms;
+  display: none;
+}
+
+#book-button:hover {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+}
+
+/* text selection */
+::selection {
+  background: rgba(215, 192, 174, 0.75);
+  color: black;
+}
+
+/* css for observer (works for every page) */
+main .hidden-fly {
+  opacity: 0;
+  transform: translateY(50px);
+  filter: blur(5px);
+  transition: opacity 1000ms, transform 1000ms, filter 1000ms;
+}
+
+.hidden-fly.in {
+  opacity: 1;
+  transform: translateY(0px);
+  filter: blur(0);
+}
+
+.hidden-zoom {
+  padding: 50px;
+  opacity: 0.2;
+  transition: opacity 400ms ease-in, transform 400ms ease-in; 
+}
+
+.hidden-zoom.in {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* CSS for loading image */
+#loading {
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 101;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+    /* CSS for index page */
+
+/* CSS for description list*/
+#index-main dl {
+  text-align: left;
+}
+
+#index-main dt {
+  padding: 0;
+  font-weight: bold;
+  font-size: 120%;
+  margin: 10px 0;
+}
+
+/* CSS for take this quiz bouncing text */
+#bounce-text {
+  animation: bounce 700ms ease infinite alternate;
+}
+
+@keyframes bounce {
+  100% {transform:translateY(15px);}
+}
+
+
+
+        /*CSS for Log in page */
+#login-main form {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+}
+
+#login {
+  height: 60vh;
+}
+
+#login-main fieldset {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: 50px auto;
+  border: 1px solid white;
+}
+
+#login-main input {
+  width: 300px;
+  margin: 0px auto 10px;
+  border: 1px solid white;
+  border-radius: 5px;
+  height: 20px;
+}
+
+#login-main ::placeholder {
+  text-align: center;
+  font-size: 12pt;
+}
+
+#generated-username {
+  width: 350px;
+  margin: 10px auto 0px;
+}
+
+#login-main a {
+  text-decoration: underline;
+}
+
+#login-main legend {
+  font-size: 150%;
+}
+
+#login fieldset:nth-child(2), #login fieldset:nth-child(3) {
+  display: none;
+}
+
+
+
+        /* CSS for the three novels pages */
+
+/* book pages figure */
+#figcaption-space {
+color: white;
+}
+
+/* book pages aside */
+aside {
+border: 5px ridge white;
+background-color: rgba(245, 213, 174, 0.5);
+}
+
+
+
+        /*CSS for quiz page */
+
+/* CSS for first content on the page */
+#first-section {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+/* CSS for start button on quiz page */
+#first-section a {
+  width: auto;
+  padding: 5px 10px;
+  border: 1px solid white;
+}
+
+/*CSS for answer table on quiz page */
+#result-table {
+  width: 100%;
+}
+
+#result-table, #result-table td, #result-table tr, #result-table th {
+   border: 1px solid white;
+  border-collapse: collapse;
+}
+
+/* CSS quiz */
+#quiz-form {
+  padding-top: 200px;
+}
+
+#quiz-form fieldset {
+  border: 1px solid white;
+  margin: 100px;
+  padding: 50px 0px;
+  justify-content: center;
+}
+
+#quiz-form fieldset table, #quiz-form fieldset tr, #quiz-form fieldset td {
+	margin: auto;
+  padding: 0px;
+}
+
+#quiz-form fieldset p {
+	margin: 0px 0px 10px;
+	font-size: 110%;
+}
+
+#quiz-form label {
+	font-size: 95%;
+}
+
+/* CSS for displaying result in the table */
+.table-cell-result {
+  background-color: white;
+  color: black;
+}

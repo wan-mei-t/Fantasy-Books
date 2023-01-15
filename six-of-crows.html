@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Six of Crows</title>
+		<meta charset="utf-8">
+
+		<script src="script.js" defer></script>
+		<script src="books.js" defer></script>
+			
+		<link rel="stylesheet" href="styles/light_mode.css">
+		<link rel="stylesheet" href="styles/book.css">
+
+		<link rel="icon" href="media/logo.png">			
+	</head>
+
+	<body>
+		<div id="loading">
+			<img src="media/load.gif" alt="loading gif for when page refreshes">
+		</div>
+
+		<header id="back-to-top">
+			<a href="index.html">
+				<img
+				  src="media/logo.png"
+				  alt="logo"
+				  id="logo">
+			</a>
+
+			<h1>B & W</h1>
+		  
+			<button type="button">🌞</button>
+		</header>
+
+		<nav>
+			<ul class="navlink">
+				<li>
+					<a href="these-violent-delights.html">These Violent Delights</a>
+				</li>
+				<li>
+					<a href="the-atlas-six.html">The Atlas Six</a>
+				</li>
+				<li>
+					<a href="six-of-crows.html">Six of Crows</a>
+				</li>
+				<li>
+					<a href="quiz.html">Quiz</a>
+				</li>
+				<li>
+					<a href="login.html">Log in</a>
+				</li>
+			</ul>
+		</nav>
+		
+		<main>
+			<section class="hidden-fly">
+				<h2>Six of Crows by Leigh Bardugo</h2>
+
+				<h3 id="plot">Plot Summary</h3>
+				<p>
+					Six of Crows is a fantasy novel set in the Grishaverse, a world
+					created entirely by the author. After recieving an irrefusable offer
+					to capture the famous scientist Bo-Yul Bayur in exchange for 30
+					million kruge, Kaz Brekker, leader of the infamous gang in Ketterdam
+					known as the Dregs, recruits Jesper, Nina, Inej, Matthias, and Wylan
+					to help him break into the Ice Court on a more than insane heist
+					across Ravka; However, it proves to be much more difficult than he
+					thought...
+				</p>
+			</section>
+		
+			<section class="hidden-fly">
+				<h3 id="characters">Characters</h3>
+				
+				<p>
+					Art by <a href="https://kevinwada.tumblr.com/post/147405838356/lbardugo-all-of-the-character-art">@kevinwada</a><br>
+					Card shuffling css trick by <a href="https://codepen.io/william-goldsworthy/pen/JzVajj">Willian Goldsworthy</a> on Codepen!
+				</p>
+				<!-- ADD COPYRIGHT -->
+				
+				<div class="container">
+					<figure>
+						<img
+							src="media/kaz.png"
+							alt="picture of Kaz Brekker"
+							id="kaz"
+						>
+					</figure>
+					
+					<figure>
+						<img
+							src="media/inej.png"
+							alt="picture of Inej Ghafa"
+							id="inej"
+						>
+					</figure>
+					
+					<figure>
+						<img
+							src="media/jesper.png"
+							id="jesper"
+							alt="picture of Jesper Fahey"
+						>
+					</figure>
+					
+					<figure>
+						<img
+							src="media/nina.png"
+							id="nina"
+							alt="picture of Nina Zenik"
+						>
+					</figure>
+					
+					<figure>
+						<img
+							src="media/wylan.png"
+							id="wylan"
+							alt="picture of Wylan Van Eck"
+						>
+					</figure>
+					
+					<figure>
+						<img
+							src="media/mattias.png"
+							id="matthias"
+							alt="picture of Matthias Helvar"
+						>
+					</figure>
+				</div>
+			</section>
+				
+			<div id="figcaption-space"></div>
+					
+			<section class="hidden-fly">			
+				<h3 id="recommend">Should you read this book?</h3>
+			
+				<form id="book-form">
+					<table>
+						<tbody id="book-quiz">
+							<tr>
+								<!-- in javascript, use input array checked to access values in loop! -->
+								<th>Do you love character-driven books?</th>
+								<td>
+									<label for="q1-yes" class="question1">YES
+										<input type="radio" name="question1" value="yes" id="q1-yes">
+									</label>
+								</td>
+								<td>
+									<label for="q1-no" class="question1">NO
+										<input type="radio" name="question1" id="q1-no" value="no">
+									</label>
+								</td>
+							</tr>
+							<tr>
+								<th>Do you enjoy heists and action?</th>
+								<td>
+									<label for="q2-yes">YES
+										<input type="radio" name="question2" id="q2-yes" value="yes">
+									</label>
+								</td>
+								<td>
+									<label for="q2-no">NO
+										<input type="radio" name="question2" id="q2-no" value="no">
+									</label>
+								</td>
+							</tr>
+							<tr>
+								<th>Do you love books where characters begrudgingly work together, and later become friends?</th>
+								<td>
+									<label for="q3-yes">YES
+										<input type="radio" name="question3" id="q3-yes" value="yes">
+									</label>
+								</td>
+								<td>
+									<label for="q3-no">NO
+										<input type="radio" name="question3" id="q3-no" value="no">
+									</label>
+								</td>
+							</tr>
+							<tr>
+								<th>Do you enjoy plot twist after plot twist?</th>
+								<td>
+									<label for="q4-yes">YES
+										<input type="radio" name="question4" id="q4-yes" value="yes">
+									</label>
+								</td>
+								<td>
+									<label for="q4-no">NO
+										<input type="radio" name="question4" id="q4-no" value="no">
+									</label>
+								</td>
+							</tr>
+							<tr>
+								<th>Do you enjoy morally gray characters?</th>
+								<td>
+									<label for="q5-yes">YES
+										<input type="radio" name="question5" id="q5-yes" value="yes">
+									</label>
+								</td>
+								<td>
+									<label for="q5-no">NO
+										<input type="radio" name="question5" id="q5-no" value="no">
+									</label>
+								</td>
+							</tr>
+							<tr>
+								<th colspan="3"><button type="button" id="book-button">Get results!</button></th>
+							</tr>
+						</tbody>
+					</table>
+				</form>
+			
+				<div class="hidden-fly" id="read">
+					It seems like Six of Crows may be your type of book!
+				</div>
+				
+				<div class="hidden-fly" id="not-read">
+					Hmmm, perhaps try checking out some of our other recommended books?
+				</div>
+			</section>
+			
+			<section class="hidden-fly">
+				<h3>Watch the season 1 trailer for the book adaptation!</h3>
+				<!-- apologies for the inline css. i attempted to use external css but it really wasnt working in my favour 
+				i would also like to mention that chrome is giving a lot of errors because of this iframe due to some request we have no knowledge about.
+				i hope thats okay, and we apologize for the inconvenience! -->
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/b1WHQTbJ7vE" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+				</iframe>
+			</section>
+			
+			<div class="hidden-fly">
+				<p>
+					Esther Abrami | Track: No.4 Piano Journey. Licensed under <a href="https://creativecommons.org/licenses/by/3.0/legalcode">Creative Commons CC BY license 3.0.</a>
+				</p>
+
+				<audio controls>
+					<source src="media/No.4Esther.mp3" type="audio/mp3">
+					<p>Audio can be found <a href="media/No.4Esther.mp3">here</a></p>
+				</audio>
+			</div>
+		</main>
+		
+		<aside>
+			<ol>
+				<li><a href="#plot">Plot</a></li>
+				<li><a href="#characters">Characters</a></li>
+				<li><a href="#recommend">Should you read this book?</a></li>
+			</ol>
+		</aside>
+
+		<footer>
+			<ul>
+				<li><a href="index.html">Homepage</a></li>
+				<li><a href="login.html">Login</a></li>
+				<li>All images on this page are <em>Copyrighted.</em> We would like to thank the wonderful artists for giving us permission to use them!</li>
+			</ul>
+
+			<ul>
+				<li><a href="#back-to-top">Back To Top</a></li>
+				<li>
+					<a href="https://unsplash.com/photos/sbbKyhxgU_A">Light Mode Background - Photo Taken by J Ph</a> on <a href="https://unsplash.com/license">Unsplash.</a>
+				</li>
+				<li>
+					<a href="https://unsplash.com/photos/neH2O7TaRFU">Dark Mode Background - Photo Taken by Henry Be</a> on <a href="https://unsplash.com/license">Unsplash.</a>
+				</li>
+			</ul>
+		</footer>
+	</body>
+</html>

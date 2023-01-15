@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>The Atlas Six</title>
+		<meta charset="utf-8">
+
+		<script src="script.js" defer></script>
+		<script src="books.js" defer></script>
+			
+		<link rel="stylesheet" href="styles/light_mode.css">
+		<link rel="stylesheet" href="styles/book.css">
+
+		<link rel="icon" href="media/logo.png">			
+	</head>
+
+	<body>
+		<div id="loading">
+			<img src="media/load.gif" alt="loading gif for when page refreshes">
+		</div>
+
+		<header id="back-to-top">
+			<a href="index.html">
+				<img
+				  src="media/logo.png"
+				  alt="logo"
+				  id="logo">
+			</a>
+
+			<h1>B & W</h1>
+		  
+			<button type="button">🌞</button>
+		</header>
+
+		<nav>
+			<ul class="navlink">
+				<li>
+					<a href="these-violent-delights.html">These Violent Delights</a>
+				</li>
+				<li>
+					<a href="the-atlas-six.html">The Atlas Six</a>
+				</li>
+				<li>
+					<a href="six-of-crows.html">Six of Crows</a>
+				</li>
+				<li>
+					<a href="quiz.html">Quiz</a>
+				</li>
+				<li>
+					<a href="login.html">Log in</a>
+				</li>
+			</ul>
+		</nav>
+
+		<main>
+			<section class="hidden-fly">
+				<h2>The Altas Six by Olivie Blake</h2>
+
+				<h3 id="plot">Plot Summary</h3>
+				<p>
+					The Atlas Six is a story set in a more modern day. It follows 6
+					characters who get chosen to join The Alexadrian Society academy for
+					magicians. However, there is a catch; after one year, only 5 of them
+					will be able to continue their studies at the academy, while the other
+					will be eliminated from the competition. So the real question is, how
+					far are each of them willing to go to remain at the academy?
+				</p>
+			</section>
+			
+			<section class="hidden-fly">
+				<h3 id="characters">Characters</h3>
+				
+				<p>
+					Art by <a href="https://twitter.com/littlechmura/status/1501329678283329537?lang=en">@LittleChmura</a><br>
+					Card shuffling css trick by <a href="https://codepen.io/william-goldsworthy/pen/JzVajj">Willian Goldsworthy</a> on Codepen!
+				</p>
+				
+				<div class="container">
+					<figure>
+						<img
+							src="media/nico.webp"
+							id="nico"
+							alt="picture of Nico De Varona"
+						>
+					</figure>
+					
+					<figure>
+						<img
+							src="media/libby.webp"
+							id="libby"
+							alt="picture of Libby Rhodes"
+						>
+					</figure>
+					
+					<figure>
+						<img
+							src="media/tristan.webp"
+							id="tristan"
+							alt="picture of Tristan Caine"
+						>
+					</figure>
+					
+					<figure>
+						<img
+							src="media/parisa.webp"
+							id="parisa"
+							alt="picture of Parisa Kamali"
+						>
+					</figure>
+					
+					<figure>
+						<img
+							src="media/reina.webp"
+							id="reina"
+							alt="picture of Reina Mori"
+						>
+					</figure>
+					
+					<figure>
+						<img
+							src="media/callum.webp"
+							id="callum"
+							alt="picture of Callum Nova"
+						>
+					</figure>
+				</div>
+			</section>
+			
+			<div id="figcaption-space"></div>
+			
+			<section class="hidden-fly">
+				<h3 id="recommend">Should you read this book?</h3>
+				
+				<form id="book-form">
+					<table>
+						<tbody id="book-quiz">
+							<tr>
+								<!-- in javascript, use input array checked to access values in loop! -->
+								<th>Are you interested to know how far others would go just to achieve their ultimate goal?</th>
+								<td>
+									<label for="q1-yes" class="question1">YES
+										<input type="radio" name="question1" value="yes" id="q1-yes">
+									</label>
+								</td>
+								<td>
+									<label for="q1-no" class="question1">NO
+										<input type="radio" name="question1" id="q1-no" value="no">
+									</label>
+								</td>
+							</tr>
+							<tr>
+								<th>Do you enjoy books where you never know who you can trust?</th>
+								<td>
+									<label for="q2-yes">YES
+										<input type="radio" name="question2" id="q2-yes" value="yes">
+									</label>
+								</td>
+								<td>
+									<label for="q2-no">NO
+										<input type="radio" name="question2" id="q2-no" value="no">
+									</label>
+								</td>
+							</tr>
+							<tr>
+								<th>Do you love <em>extremely</em> morally gray characters?</th>
+								<td>
+									<label for="q3-yes">YES
+										<input type="radio" name="question3" id="q3-yes" value="yes">
+									</label>
+								</td>
+								<td>
+									<label for="q3-no">NO
+										<input type="radio" name="question3" id="q3-no" value="no">
+									</label>
+								</td>
+							</tr>
+							<tr>
+								<th>Do you love dark academia?</th>
+								<td>
+									<label for="q4-yes">YES
+										<input type="radio" name="question4" id="q4-yes" value="yes">
+									</label>
+								</td>
+								<td>
+									<label for="q4-no">NO
+										<input type="radio" name="question4" id="q4-no" value="no">
+									</label>
+								</td>
+							</tr>
+							<tr>
+								<th>if i told you you could have everything you want if you accepted my offer with unknown conditions, would you accept?</th>
+								<td>
+									<label for="q5-yes">YES
+										<input type="radio" name="question5" id="q5-yes" value="yes">
+									</label>
+								</td>
+								<td>
+									<label for="q5-no">NO
+										<input type="radio" name="question5" id="q5-no" value="no">
+									</label>
+								</td>
+							</tr>
+							<tr>
+								<th colspan="3"><button type="button" id="book-button">Get results!</button></th>
+							</tr>
+						</tbody>
+					</table>
+				</form>
+				
+				<div class="hidden-fly" id="read">
+					It seems like The Atlas Six may be your type of book!
+				</div>
+				
+				<div class="hidden-fly" id="not-read">
+					Hmmm, perhaps try checking out some of our other recommended books?
+				</div>				
+			</section>
+				
+			<div class="hidden-fly">
+				<p>
+					Kalvin Plaza | Track: Something dark comes this way. Licensed under <a href="https://creativecommons.org/licenses/by/3.0/legalcode">Creative Commons CC BY license 3.0.</a>
+				</p>
+				
+				<audio controls>
+					<source src="media/atlas-six.mp3" type="audio/mp3">
+					<p>Audio can be found <a href="media/atlas-six.mp3">here</a></p>
+				</audio>
+			</div>
+		</main>
+		
+		<aside>
+			<ol>
+				<li><a href="#plot">Plot</a></li>
+				<li><a href="#characters">Characters</a></li>
+				<li><a href="#recommend">Should you read this book?</a></li>
+			</ol>
+		</aside>
+		
+		<footer>
+			<ul>
+				<li><a href="index.html">Homepage</a></li>
+				<li><a href="login.html">Login</a></li>
+				<li>All images on this page are <em>Copyrighted.</em> We would like to thank the wonderful artists for giving us permission to use them!</li>
+			</ul>
+
+			<ul>
+				<li><a href="#back-to-top">Back To Top</a></li>
+				<li>
+					<a href="https://unsplash.com/photos/sbbKyhxgU_A">Light Mode Background - Photo Taken by J Ph</a> on <a href="https://unsplash.com/license">Unsplash.</a>
+				</li>
+				<li>
+					<a href="https://unsplash.com/photos/neH2O7TaRFU">Dark Mode Background - Photo Taken by Henry Be</a> on <a href="https://unsplash.com/license">Unsplash.</a>
+				</li>
+			</ul>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,130 @@
+
+
+/* CSS for card effects */
+.container {
+  height: 300px;
+  /* changing width affects how spread out the cards are */
+  width: 100%;
+  min-width: 0;
+  top: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+figure {
+  position: relative;
+  left: 0px;
+  min-width: 0;
+  transition: 0.4s ease-out;
+  /* allows the stacking of cards*/
+  display: inline-block;
+  box-shadow: -1rem 0 3rem #000000;
+  margin: 10px;
+  border-radius: 7px;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 0;
+}
+
+figure img {
+  border-radius: 7px;
+  height: 100%;
+  width: 100%;
+  min-height: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* how spread out cards are */
+figure:not(:first-child) {
+    margin-left: -150px;
+}
+/* all elements that are NOT first child, 
+add a margin to spread them out. if changed to 0, they are spread out.
+negative margin allows them to stack!*/
+
+figure:hover {
+  transform: translateY(-40px) translateX(-40px);
+  transition: 0.4s ease-out;
+}
+
+/* all figure elements after the figure:hover element, move to the right*/
+figure:hover ~ figure {
+  position: relative;
+  left: 80px;
+  transition: 0.4s ease-out;
+}
+
+
+#figcaption-space {
+  height: 100%;
+  margin-top: 10px;
+  width: 100%;
+}
+
+
+
+main {
+  flex: 1;
+}
+
+aside {
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  width: 15%;
+  right: 0;
+  top: 40%;
+  height: auto;
+  border-radius: 7px;
+  margin: 0 5px;
+}
+
+aside a {
+  text-decoration: none;
+}
+
+ol {
+  margin: 0;
+  padding-left: 30px;
+  padding-right: 10px;
+}
+
+
+/* make it disappear */
+#book-quiz tr td label input{
+	
+	appearance: none;
+	outline: none;
+	display: none;
+}
+
+#book-quiz tr td, #book-quiz tr th {
+  text-align: center;
+  padding: 0 10px;
+}
+
+#book-form table {
+  width: 100%;
+}
+#book-form {
+  display: flex;
+  justify-content: center;
+}
+
+#read {
+  display: none;
+  text-align: center;
+  font-size: 20pt;
+  font-style: oblique;
+}
+
+#not-read {
+  display: none;
+  text-align: center;
+  font-size: 20pt;
+  font-style: oblique;
+}
+
+audio {
+	text-align: center;
+}
