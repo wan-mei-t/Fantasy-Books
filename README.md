@@ -1,6 +1,6 @@
 # Fantasy-Books
 
-Fantasy-Books is a teamwork (of 2) assignment for school.
+Fantasy-Books is a teamwork (of 2) project for our first web application course during our first semester.
 
 We created a website that talks about fantasy books. There are many fun interactions, quizzes and effects!
 
